@@ -1,19 +1,23 @@
 # game.py
 
+import os
 import random
 #from random import choice
 
+from dotenv import load_dotenv
 print("Rock, Paper, Scissors, Shoot!")
 
+load_dotenv()
 
+PLAYER_NAME = os.getenv("PLAYER_NAME", default="Player One")
 
 print("-------------------")
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print(f"Welcome '{PLAYER_NAME}' to my Rock-Paper-Scissors game...")
 print("-------------------")
 
-#
-#asking for user input
-#
+
+#Asking for user input
+
 
 
 #printing many things separated by a comma
@@ -51,10 +55,10 @@ print(f"The computer chose: {computer_choice}")
 
 
 
-#determing who won - code used from Slack from 
+#determing who won - code used from Slack from William Perrone
 
 if computer_choice == user_choice:
-    print("It's tie!")
+    print("It's a tie!")
 elif user_choice == "paper" and computer_choice == "rock":
     print("You win! Congrats")
 elif user_choice == "paper" and computer_choice == "scissors":
@@ -68,13 +72,6 @@ elif user_choice == "scissors" and computer_choice == "paper":
 elif user_choice == "scissors" and computer_choice == "rock":
     print("Oh! The computer won, that's ok!")    
 
-#simulating a computer input
 
-#print("The computer chose: 'paper'")
-#
-##determining who won
-#
-#print("-------------------")
-#print("Oh, the computer won. It's ok.")
-#print("-------------------")
-#print("Thanks for playing. Please play again!")
+print("-------------------")
+print("Thanks for playing. Please play again!")
