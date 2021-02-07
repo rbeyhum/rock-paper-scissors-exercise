@@ -39,11 +39,12 @@ Then, the ``` .lower() ``` command is used in order for data validation. Here, i
 
 ### Simulating Computer Selection
 
-In this exercise, the user is playing against the computer. Therefore, something must be done in the code in order to randomly select the computer's selection. Line 3 of the game.py file states:
+In this exercise, the user is playing against the computer. Therefore, something must be done in the code in order to randomly select the computer's selection. Line 3 and 4 of the game.py file state:
 ```python
+import os
 import random
 ```
-This allows the user to then call the ``` random.choice()``` in order to select a random choice for the computer's selection to play against the user. 
+This allows the user to then call the ``` random.choice()``` in order to select a random choice for the computer's selection to play against the user. While, the os package is used for customizing the player name.
 
 ### Determining the Winner and Final Output
 
