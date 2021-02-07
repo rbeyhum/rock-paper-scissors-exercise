@@ -43,7 +43,7 @@ In this exercise, the user is playing against the computer. Therefore, something
 ```python
 import random
 ```
-This allows the user to then call the ``` random.choice()``` in order to select a random choice for the compiuter's selection to play against the user. 
+This allows the user to then call the ``` random.choice()``` in order to select a random choice for the computer's selection to play against the user. 
 
 ### Determining the Winner and Final Output
 
