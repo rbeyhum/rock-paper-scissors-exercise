@@ -26,7 +26,7 @@ print("-------------------")
 
 user_choice = input("Please choose either 'rock', 'paper', 'scisscors': ")
 
-
+user_choice = user_choice.lower()
 
 print(f"You chose: {user_choice}")
 
@@ -35,10 +35,10 @@ options = ["rock", "paper", "scissors"]
 #validate the user selection
 #stop the program and not try to determine the winner if the user choice is invalid
 
-user_choice.lower()
+
 
 if user_choice not in options:
-    print("OOPS, please choose a valid option!")
+    print("OOPS, please choose a valid option and try again!")
     exit()
 
 
@@ -51,7 +51,7 @@ print(f"The computer chose: {computer_choice}")
 
 
 
-#determing who won
+#determing who won - code used from Slack from 
 
 if computer_choice == user_choice:
     print("It's tie!")
