@@ -45,7 +45,7 @@ if user_choice not in options:
     print("OOPS, please choose a valid option and try again!")
     exit()
 
-
+#simulating computer options and printing it
 computer_choice = random.choice(options)
 #computer_choice = choice(options)
 
